@@ -1,0 +1,3 @@
+<ul>
+    <li *ngFor="let item of listFooter" [style.color]="appService.selectedMenu == item ? 'red' : 'black' " (click)="selectMenu(item)">{{item}}</li>
+</ul>
